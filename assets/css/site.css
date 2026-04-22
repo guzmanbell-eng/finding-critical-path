@@ -1328,7 +1328,10 @@ a:focus {
   }
 
   .home-logo {
-    max-height: 8.9rem;
+    width: 100%;
+    min-width: 3.3rem;
+    height: auto;
+    max-height: none;
   }
 
   .featured-edition {
@@ -1402,7 +1405,10 @@ a:focus {
   }
 
   .home-page.home-scrolled .home-logo {
-    max-height: 5.8rem;
+    width: 100%;
+    min-width: 3.3rem;
+    height: auto;
+    max-height: none;
   }
 
   .home-page.home-scrolled .home-title {

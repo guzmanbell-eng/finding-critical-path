@@ -517,6 +517,8 @@ Archive browsing should evolve in stages based on actual archive volume rather t
 
 **Phase 3:** Add year selection once the publication spans multiple years and year-based browsing becomes genuinely useful.
 
+**Phase 4:** Add **Archive Search** as a later archive usability enhancement once the publication library is large enough that browsing alone becomes less effective. This should help readers quickly find past editions, prioritize a solution that works well with a static site, and eventually support full-text search across edition content, title and excerpt search, and optional future filters such as year, theme, or topic. The goal is to improve discoverability and strengthen the archive as a polished publication resource, not just add a technical feature.
+
 ### Later Capability Expansion
 
 Likely later directions include:

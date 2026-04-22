@@ -28,6 +28,67 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-04-21 - Mobile Homepage Logo Compression Fixed
+
+**Summary**  
+Adjusted the homepage intro logo sizing on small screens so the Finding Critical Path mark now keeps a stable proportional width instead of compressing when space gets tight.
+
+**Reason for Change**  
+On mobile, the homepage logo could visually narrow inside the intro framing as the adjacent text column compressed. The logo needed to hold its intended presence while letting the text side absorb the responsive pressure.
+
+**What Changed**  
+- Updated the mobile `.home-logo` rule so the logo now fills the fixed mobile logo column with `width: 100%` and `height: auto`
+- Added a matching mobile `min-width` so the logo keeps a stable width inside the homepage intro layout
+- Applied the same sizing rule to the scrolled-homepage state so the logo remains proportional after the header reveal behavior engages
+
+**Files or Areas Affected**  
+- `assets/css/site.css`
+- `docs/development-log.md`
+
+**Design or Structural Decisions**  
+This was kept as a narrow CSS-only fix within the existing homepage composition. The mobile intro still uses the same two-column layout, but the text column now absorbs responsive compression instead of the logo.
+
+**Mobile / Performance / Accessibility Notes**  
+- Mobile-only CSS adjustment with no desktop layout change
+- No scripts, dependencies, or markup changes were introduced
+- The logo image continues to render proportionally using intrinsic aspect ratio
+
+### 2026-04-21 - Week 16 Integrated As Live Latest Edition
+
+**Summary**  
+Published Week 16 as a live edition page and promoted it into the site's current latest-edition flow.
+
+**Reason for Change**  
+The Week 16 markdown and edition graphic were already prepared. The site needed the edition published through the established static article pattern, then surfaced in the homepage, archive, and adjacent edition navigation without changing the site's structure or deployment assumptions.
+
+**What Changed**  
+- Added a published Week 16 edition page at `archive/2026/week-16/index.html`
+- Carried the Week 16 title, date, hero image, continuous article body, and `Dive deeper` entries from `content/2026/week-16.md` into the live edition page
+- Preserved the markdown wording directly for the Week 16 `Hook`, `Hook Text`, `Tech Framing`, `Structural Close`, and `Forward Looking Question`
+- Promoted Week 16 into the homepage featured latest-edition slot using the markdown's `Hook`, `Hook Text`, and `Tech Framing` verbatim
+- Shifted the homepage `Past Editions` strip so it now shows the prior published sequence behind Week 16 in reverse chronological order
+- Added Week 16 to the main archive in reverse chronological position ahead of Week 15
+- Updated adjacent edition navigation so Week 15 now links forward to Week 16 and Week 16 links back to Week 15
+- Confirmed the existing Week 16 asset at `assets/2026/week-16/w16cover.png` already matched the markdown metadata and required no rename or path correction
+- Completed a post-integration drift check across the markdown source, live edition page, homepage, archive, asset path, alt text, and adjacent navigation; no additional website corrections were required
+
+**Files or Areas Affected**  
+- `assets/2026/week-16/w16cover.png`
+- `archive/2026/week-16/index.html`
+- `archive/2026/week-15/index.html`
+- `archive/index.html`
+- `index.html`
+- `docs/development-log.md`
+
+**Design or Structural Decisions**  
+This remained a manual static-content integration within the site's existing edition template, homepage feature treatment, archive row pattern, and closing utility band. No new image handling, layout pattern, or publication structure was introduced.
+
+**Mobile / Performance / Accessibility Notes**  
+- No new dependencies or scripts were introduced
+- Week 16 reuses the site's existing responsive edition-page pattern
+- The hero image alt text was taken from the markdown metadata
+- Homepage and archive updates stayed within the current lightweight static markup flow
+
 ### 2026-04-19 - Site Overview Synced To Final Launch State
 
 **Summary**  
