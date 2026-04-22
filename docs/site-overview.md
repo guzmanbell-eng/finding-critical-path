@@ -212,6 +212,8 @@ The tagline belongs to the page framing, not to the edition preview itself.
 
 The homepage featured-edition action should remain lightweight and editorial, using a simple text link treatment rather than a promotional boxed button.
 
+The homepage intro logo should keep a reserved, non-collapsing square footprint on mobile. Its wrapper should provide the stable width, and the image markup should carry intrinsic dimensions so the branding area avoids avoidable CLS during load.
+
 ## 9. Archive Strategy
 
 The archive is a key part of the site and should support browsing in a way that feels modern, clean, and editorial.

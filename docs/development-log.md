@@ -28,6 +28,35 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-04-22 - Homepage Logo Load-State Stabilized On Mobile
+
+**Summary**  
+Stabilized the homepage intro logo on mobile so it no longer narrows during first paint before the branding layout settles.
+
+**Reason for Change**  
+The earlier mobile sizing guard corrected the final layout, but the homepage logo still depended on load-time image sizing and row-based measurements. On mobile, that allowed a brief squeeze before the image dimensions and intro layout fully resolved, creating visible layout shift in the branding area.
+
+**What Changed**  
+- Wrapped the homepage intro logo in a dedicated `.home-logo-wrap` element that becomes a reserved square box on mobile with `aspect-ratio: 1 / 1`
+- Gave the mobile logo wrapper an explicit `3.3rem` width and matching `min-width` so the logo column stays stable from first paint
+- Updated `.home-logo` to use `display: block`, `width: 100%`, and `height: auto`
+- Added intrinsic `width` and `height` attributes (`1056` by `1056`) to the homepage logo markup so the browser can reserve image dimensions during load
+
+**Files or Areas Affected**  
+- `index.html`
+- `assets/css/site.css`
+- `docs/site-overview.md`
+- `docs/development-log.md`
+
+**Design or Structural Decisions**  
+Kept the fix narrow and homepage-focused. The intro still uses the same two-column editorial composition, but the logo now lives in a reserved wrapper rather than letting the image itself determine the column width during load.
+
+**Mobile / Performance / Accessibility Notes**  
+- Reduces mobile CLS risk by reserving the logo box before image decode completes
+- Keeps desktop layout and homepage typography intact
+- Introduces no new dependencies or script behavior
+- Still worth confirming on a real mobile device, since this issue was specifically paint-order sensitive
+
 ### 2026-04-21 - Mobile Homepage Logo Compression Fixed
 
 **Summary**  
