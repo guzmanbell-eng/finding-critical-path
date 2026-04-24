@@ -28,6 +28,106 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-04-23 - Cloudflare Web Analytics Snippet Installed
+
+**Summary**  
+Added the Cloudflare Web Analytics snippet to every public HTML page so lightweight analytics can load site-wide without changing the site's structure or behavior.
+
+**Reason for Change**  
+The site needed a minimal analytics layer for public-page traffic measurement without introducing another analytics tool or changing deployment, routing, or content behavior.
+
+**Files or Areas Affected**  
+- `index.html`
+- `about/index.html`
+- `archive/index.html`
+- `archive/2026/index.html`
+- `archive/2026/week-04/index.html`
+- `archive/2026/week-05/index.html`
+- `archive/2026/week-06/index.html`
+- `archive/2026/week-07/index.html`
+- `archive/2026/week-08/index.html`
+- `archive/2026/week-09/index.html`
+- `archive/2026/week-10/index.html`
+- `archive/2026/week-11/index.html`
+- `archive/2026/week-12/index.html`
+- `archive/2026/week-13/index.html`
+- `archive/2026/week-14/index.html`
+- `archive/2026/week-15/index.html`
+- `archive/2026/week-16/index.html`
+- `methodology/index.html`
+- `docs/development-log.md`
+
+### 2026-04-23 - Week 4 Hero Graphic Height Brought In Line
+
+**Summary**  
+Reduced the displayed size of the Week 4 launch graphic on both the article page and the main archive so the square image sits at a calmer height that better matches later edition presentation.
+
+**Reason for Change**  
+The Week 4 launch graphic was rendering noticeably taller than the newer edition hero treatment, both on the article page and in the archive list. A small page-specific sizing adjustment keeps the image square while bringing its visual height closer to the Week 16 presentation.
+
+**Files or Areas Affected**  
+- `archive/2026/week-04/index.html`
+- `archive/index.html`
+- `assets/css/site.css`
+- `docs/development-log.md`
+
+### 2026-04-23 - About Page Launch Article Link Added
+
+**Summary**  
+Added a quiet inline link to the published launch article in the About page's `Why it exists` section.
+
+**Reason for Change**  
+The About page needed a small editorial bridge back to the publication's launch piece so readers can find the original framing without adding a new module or changing the page's restrained tone.
+
+**Files or Areas Affected**  
+- `about/index.html`
+- `docs/development-log.md`
+
+### 2026-04-23 - Weeks 4 Through 11 Backfilled Into Published Archive
+
+**Summary**  
+Published archive editions for weeks 4 through 11, replaced the old placeholder redirects in that range, and reconnected the full published edition chain from the launch piece through Week 16 without disturbing the true latest-edition homepage state.
+
+**Reason for Change**  
+The markdown and graphics for weeks 4 through 11 were already prepared, but most of those routes were still unpublished placeholders. The site needed a clean archive backfill that respected publication chronology, preserved the existing static edition pattern, and kept the homepage anchored to the true latest edition rather than the most recently integrated files.
+
+**What Changed**  
+- Added a live Week 4 archive page at `archive/2026/week-04/index.html` and treated it as the special launch/intro archive piece within the normal published chain
+- Replaced the redirect placeholder routes for weeks 5 through 11 with full published edition pages
+- Carried the week 4 through 11 markdown title, date, hero image, article body, and `Dive deeper` material into the live archive pages where those sections exist
+- Preserved each markdown file's structured opening and closing wording where those structures exist, while keeping the body presentation continuous and editorial
+- Updated `archive/index.html` so the public archive now lists the full published sequence in reverse chronological order from Week 16 through Week 4
+- Updated adjacent edition navigation so the published chain now runs continuously from Week 4 to Week 16, including adding Week 11 as the `Previous edition` link on Week 12
+- Left the homepage unchanged because Week 16 remains the true latest published edition by chronology and the homepage `Past Editions` strip already reflected the correct three prior published editions
+- Corrected Week 5 markdown metadata so `content/2026/week-05.md` now points to the actual existing asset filename `w05cover.jpg`
+
+**Files or Areas Affected**  
+- `content/2026/week-05.md`
+- `archive/2026/week-04/index.html`
+- `archive/2026/week-05/index.html`
+- `archive/2026/week-06/index.html`
+- `archive/2026/week-07/index.html`
+- `archive/2026/week-08/index.html`
+- `archive/2026/week-09/index.html`
+- `archive/2026/week-10/index.html`
+- `archive/2026/week-11/index.html`
+- `archive/2026/week-12/index.html`
+- `archive/index.html`
+- `docs/development-log.md`
+
+**Design or Structural Decisions**  
+This backfill stayed inside the site's established static publication workflow. The main archive remained the public archive surface, the homepage latest-edition treatment was left untouched, and no new layout pattern or generation step was introduced. Week 4 was intentionally integrated as a special introductory archive piece, so it was published in chronology and navigation without forcing it into a newer standard-edition shape it does not fully use.
+
+**Mobile / Performance / Accessibility Notes**  
+- No new dependencies or scripts were introduced
+- The backfilled editions reuse the current responsive edition-page template and archive row pattern
+- The hero image alt text for each backfilled edition was carried from markdown metadata
+- The archive remains a single-page chronological browse surface, which should still be checked in-browser now that the published list is materially longer
+
+**Risks / Watchouts**  
+- This workflow is still manual, so future backfills or corrections should continue checking for drift between markdown metadata, asset filenames, archive rows, and published page navigation
+- Week 4 is intentionally different from the later weekly brief structure, so its live page should be reviewed in-browser to confirm the special intro piece still feels clean inside the standard edition shell
+
 ### 2026-04-22 - Homepage Logo Load-State Stabilized On Mobile
 
 **Summary**  
