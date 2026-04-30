@@ -28,6 +28,62 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-04-30 - Week 17 Published As Latest Edition
+
+**Summary**  
+Published Week 17 as the new latest edition, promoted it on the homepage, added it to the top of the archive, and connected adjacent navigation between Weeks 16 and 17 without changing the site's manual static workflow.
+
+**Reason for Change**  
+Week 17 source markdown and image assets were already prepared, but the site does not auto-discover new editions. The publication state needed a focused manual update so the newest published edition appears consistently across the article route, homepage, archive, and edition-to-edition navigation.
+
+**What Changed**  
+- Created the live Week 17 edition page at `archive/2026/week-17/index.html`
+- Carried the Week 17 title, date range, hero image, opening, body, closing, references, and process note directly from `content/2026/week-17.md`
+- Promoted Week 17 into the homepage featured latest-edition area using the markdown's `Hook`, `Hook Text`, and `Tech Framing` wording verbatim
+- Shifted the homepage `Past Editions` strip so it now shows Weeks 16, 15, and 14 in reverse chronological order behind the new latest edition
+- Added Week 17 to the top of the main archive in reverse chronological position
+- Updated adjacent edition navigation so Week 16 now links forward to Week 17 and Week 17 links back to Week 16
+
+**Files or Areas Affected**  
+- `archive/2026/week-17/index.html`
+- `archive/2026/week-16/index.html`
+- `index.html`
+- `archive/index.html`
+- `docs/development-log.md`
+
+**Design or Structural Decisions**  
+This remained a manual static-content integration within the site's existing edition template, homepage feature treatment, archive list pattern, and closing utility navigation. No new dependency, build step, automation layer, or architecture change was introduced, and `docs/site-overview.md` did not need updating because site behavior and guidance stayed the same.
+
+**Mobile / Performance / Accessibility Notes**  
+- No new dependencies or additional scripts were introduced beyond the existing shared edition-page share behavior
+- Week 17 reuses the site's established responsive article layout, homepage feature block, and archive row pattern to preserve mobile behavior
+- The Week 17 hero and archive/homepage image alt text were taken directly from the markdown metadata for consistent accessibility treatment
+- The existing image path pattern and shared stylesheet were reused, preserving current static deployment and performance assumptions
+
+**Risks / Watchouts**  
+- The markdown-to-HTML workflow is still manual, so homepage, archive, article route, and adjacent navigation must continue to be checked together for each future edition
+- Reading time, preview placement, and article markup are still maintained by hand, which leaves room for drift if future updates miss one of the public surfaces
+- Because the site does not auto-discover edition metadata, future publication passes should continue verifying chronology and asset filenames against the markdown source of truth
+
+**Follow-Up Opportunities**  
+- Review the homepage, archive, and Week 17 article route in-browser on mobile and desktop to confirm the new edition image and long opening copy sit cleanly within the existing responsive layout
+- If the manual workflow continues, consider documenting a short repeatable publication checklist so future weekly integrations are less likely to miss one of the public surfaces
+
+
+### 2026-04-24 - Week 4 Launch Graphic Alt Text Corrected
+
+**Summary**  
+Updated the Week 4 launch article image alt text so it accurately describes the current Finding Critical Path logo graphic instead of a generic editorial illustration.
+
+**Reason for Change**  
+The Week 4 page uses the publication logo as its launch graphic, so the previous alt text overstated the visual content and no longer matched the image. The correction keeps the existing image and layout unchanged while improving accessibility accuracy.
+
+**Files or Areas Affected**  
+- `content/2026/week-04.md`
+- `archive/2026/week-04/index.html`
+- `archive/index.html`
+- `docs/development-log.md`
+
 ### 2026-04-23 - Cloudflare Web Analytics Snippet Installed
 
 **Summary**  

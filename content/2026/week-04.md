@@ -7,7 +7,7 @@ year: 2026
 date: "January 1-24, 2026"
 slug: "2026-week-04"
 graphic: "w04cover.png"
-graphic_alt_text: "Editorial-style graphic representing the launch of Finding Critical Path through AI-assisted news scanning, signal filtering, and insight generation across the nuclear industry."
+graphic_alt_text: "Finding Critical Path logo used as the launch graphic for the publication's opening article."
 ---
 
 # Why Finding Critical Path Exists
