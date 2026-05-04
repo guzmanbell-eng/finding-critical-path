@@ -56,6 +56,8 @@ a:focus {
 
 .site-shell {
   min-height: 100vh;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 .site-header {
@@ -118,6 +120,7 @@ a:focus {
   align-items: center;
   gap: 0.8rem;
   color: var(--ink);
+  min-width: 0;
 }
 
 .brand-logo {
@@ -131,6 +134,7 @@ a:focus {
   display: flex;
   flex-direction: column;
   gap: 0.12rem;
+  min-width: 0;
 }
 
 .brand-kicker,
@@ -298,6 +302,8 @@ a:focus {
   max-width: var(--reading-width);
   font-size: 1rem;
   margin: 0 auto;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .article-body ul {
@@ -312,6 +318,7 @@ a:focus {
 
 .issue-article {
   max-width: 100%;
+  min-width: 0;
 }
 
 .issue-meta {
@@ -342,6 +349,7 @@ a:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
 }
 
 .issue-title {
@@ -350,6 +358,7 @@ a:focus {
   margin: 0 0 0.9rem;
   max-width: 11ch;
   letter-spacing: -0.04em;
+  overflow-wrap: normal;
 }
 
 .issue-byline {
@@ -411,6 +420,7 @@ a:focus {
   margin-top: 1.85rem;
   padding-top: 1.15rem;
   border-top: 1px solid var(--rule);
+  min-width: 0;
 }
 
 .issue-closing a,
@@ -425,6 +435,7 @@ a:focus {
   font-size: 0.74rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .issue-closing a {
@@ -682,6 +693,7 @@ a:focus {
 
 .issue-hero {
   margin: 0;
+  min-width: 0;
 }
 
 .issue-hero--compact-square {
@@ -764,6 +776,7 @@ a:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 0;
 }
 
 .home-logo-wrap {
@@ -794,6 +807,7 @@ a:focus {
   font-weight: 600;
   letter-spacing: -0.02em;
   white-space: nowrap;
+  overflow-wrap: normal;
   transition:
     font-size 220ms ease,
     margin 220ms ease,
@@ -821,6 +835,7 @@ a:focus {
   margin-bottom: 2rem;
   position: relative;
   z-index: 1;
+  min-width: 0;
 }
 
 .home-transition {
@@ -854,6 +869,7 @@ a:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
 }
 
 .featured-edition-title {
@@ -863,6 +879,7 @@ a:focus {
   font-weight: 600;
   letter-spacing: -0.04em;
   max-width: 11ch;
+  overflow-wrap: normal;
 }
 
 .featured-edition-title a {
@@ -872,10 +889,13 @@ a:focus {
 .featured-edition-excerpt {
   margin: 0 0 0.95rem;
   max-width: none;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .featured-edition-media {
   display: block;
+  min-width: 0;
 }
 
 .featured-edition-media img {
@@ -939,6 +959,7 @@ a:focus {
 .archive-page-shell {
   display: grid;
   gap: 2.4rem;
+  min-width: 0;
 }
 
 .archive-page-intro {
@@ -1003,6 +1024,7 @@ a:focus {
   justify-content: center;
   gap: 0.55rem;
   padding: 1.3rem 0 0.7rem;
+  min-width: 0;
 }
 
 .archive-edition-title {
@@ -1055,6 +1077,7 @@ a:focus {
 
 .archive-edition-media {
   display: block;
+  min-width: 0;
 }
 
 .archive-edition-media--compact-square {
@@ -1349,6 +1372,9 @@ a:focus {
   }
 
   .home-lead::before {
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
     height: 10.35rem;
     background: rgba(240, 243, 244, 0.76);
   }
@@ -1385,11 +1411,12 @@ a:focus {
   }
 
   .featured-edition-title {
-    font-size: clamp(1.9rem, 9vw, 2.5rem);
+    font-size: clamp(1.8rem, 8vw, 2.25rem);
   }
 
   .home-title {
     white-space: normal;
+    font-size: clamp(1.65rem, 7vw, 2rem);
   }
 
   .past-editions-grid {
@@ -1450,6 +1477,12 @@ a:focus {
     background: rgba(240, 243, 244, 0.7);
   }
 
+  .site-footer::before {
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+  }
+
   .home-page.home-scrolled .home-logo {
     width: 100%;
     height: auto;
@@ -1498,6 +1531,10 @@ a:focus {
 
   .issue-transition {
     margin-bottom: 1.1rem;
+  }
+
+  .issue-title {
+    font-size: clamp(1.9rem, 8.5vw, 2.35rem);
   }
 
   .issue-endnotes {

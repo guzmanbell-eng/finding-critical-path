@@ -28,6 +28,47 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-05-04 - Mobile Horizontal Overflow Fixed After Week 18 Deployment
+
+**Summary**
+Removed the narrow-mobile horizontal overflow that appeared on the homepage and Week 18 article page after the Week 18 deployment, while preserving the existing static workflow, article content, publication ordering, navigation, and desktop layout intent.
+
+**Reason for Change**
+Live mobile review at roughly 390px wide showed a horizontal scrollbar and right-edge clipping on the homepage and Week 18 article page. Because Week 18 reused the shared homepage, edition, and footer layout patterns, the issue needed to be fixed in shared CSS rather than by changing Week 18 content or markup.
+
+**Likely Cause**
+The primary cause was the site's full-bleed decorative band pattern using `100vw` pseudo-elements inside centered containers. On narrow viewports, and also by a few pixels on desktop where the scrollbar gutter is included in `100vw`, those pseudo-elements could create a scrollable horizontal area. Some shared grid and flex children also lacked explicit shrink guards, which made long editorial titles, excerpts, references, images, or utility links more vulnerable to overflow as new edition content varied in length.
+
+**What Changed**
+- Added horizontal overflow containment to `.site-shell` using `overflow-x: clip` so decorative full-bleed surfaces cannot create page-level horizontal scrolling
+- Added `min-width: 0` to key shared grid/flex children and media containers in the homepage, article, archive, and header layouts
+- Added conservative wrapping protection for article body text, featured excerpts, closing utility links, and share controls
+- Slightly reduced small-screen display-type ceilings for homepage/edition titles so longer titles wrap more comfortably on phone widths
+- Constrained the homepage lead and footer pseudo-elements to the local container width inside the small-screen breakpoint to avoid mobile edge spill from decorative background bands
+
+**Files or Areas Affected**
+- `assets/css/site.css`
+- `docs/development-log.md`
+
+**Design or Structural Decisions**
+This was kept as a CSS-only layout repair. No article copy, archive chronology, homepage ordering, navigation structure, image assets, scripts, dependencies, build logic, or deployment assumptions were changed. `docs/site-overview.md` was intentionally left unchanged because the documented site behavior and future guidance did not change; this was an implementation-quality fix within the existing mobile guardrails.
+
+**Mobile / Performance / Accessibility Notes**
+- Verified with local static serving and Chrome device emulation that `scrollWidth` equals `clientWidth` at 360px, 390px, and 430px for the homepage, Week 18, archive, and Week 17 pages
+- Verified the same four pages at 1280px width to confirm the fix did not introduce desktop horizontal overflow
+- Measured key 390px elements, including homepage intro, featured title, featured image, featured excerpt, Week 18 title, article body, hero image, and closing utility area, and confirmed their bounding boxes fit inside the viewport
+- No new runtime cost, dependency, or script behavior was introduced
+- The changes support mobile readability by allowing long titles and link text to wrap rather than forcing page overflow
+
+**Risks / Watchouts**
+- Because the site is static and edition content varies by hand, future weekly deployments should continue checking narrow mobile widths after adding longer titles, long reference titles, or unusually wide imagery
+- Real-device mobile review remains valuable for the homepage header reveal and logo area, especially because browser chrome, font rendering, and scrollbar behavior can differ from headless validation
+
+**Follow-Up Opportunities**
+- Add narrow mobile overflow checks to the manual weekly publication checklist so future edition releases catch layout pressure from long titles, source links, or new image proportions before deployment
+- Include at least one real-device mobile review after deployment when homepage framing, hero imagery, or title length changes materially
+
+
 ### 2026-05-04 - Week 18 Published As Latest Edition
 
 **Summary**  
