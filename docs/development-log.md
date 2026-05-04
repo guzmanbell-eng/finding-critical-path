@@ -28,6 +28,48 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-05-04 - Week 18 Published As Latest Edition
+
+**Summary**  
+Published Week 18 as the new latest edition, promoted it on the homepage, added it to the top of the archive, and connected adjacent navigation between Weeks 17 and 18 while preserving the site's manual static-content workflow.
+
+**Reason for Change**  
+Week 18 source markdown and image assets were already prepared, but the site does not auto-discover new editions. The live article route, homepage, archive, and adjacent article navigation needed to be updated manually so the newest published edition appears consistently across public surfaces.
+
+**What Changed**  
+- Created the live Week 18 edition page at `archive/2026/week-18/index.html`
+- Carried the Week 18 title, normalized public date range, hero image, opening, body, closing, references, and process note directly from `content/2026/week-18.md`
+- Promoted Week 18 into the homepage featured latest-edition area using the markdown's `Hook`, `Hook Text`, and `Tech Framing` wording verbatim
+- Shifted the homepage `Past Editions` strip so it now shows Weeks 17, 16, and 15 in reverse chronological order behind the new latest edition
+- Added Week 18 to the top of the main archive in reverse chronological position
+- Updated adjacent edition navigation so Week 17 now links forward to Week 18 and Week 18 links back to Week 17
+
+**Files or Areas Affected**  
+- `archive/2026/week-18/index.html`
+- `archive/2026/week-17/index.html`
+- `index.html`
+- `archive/index.html`
+- `docs/development-log.md`
+
+**Design or Structural Decisions**  
+This remained a manual static-content integration within the site's existing edition template, homepage feature treatment, archive list pattern, and closing utility navigation. No new dependency, build step, automated discovery layer, or architecture change was introduced, and `docs/site-overview.md` did not need updating because site behavior and guidance stayed the same.
+
+**Mobile / Performance / Accessibility Notes**  
+- No new dependencies or additional scripts were introduced beyond the existing edition-page share behavior
+- Week 18 reuses the site's established responsive article layout, homepage feature block, and archive row pattern to preserve mobile behavior
+- The Week 18 hero and archive/homepage image alt text were taken directly from the markdown metadata for consistent accessibility treatment
+- The existing image path pattern and shared stylesheet were reused, preserving current static deployment and performance assumptions
+
+**Risks / Watchouts**  
+- The markdown-to-HTML workflow is still manual, so homepage, archive, article route, and adjacent navigation must continue to be checked together for each future edition
+- Reading time, preview placement, article markup, and public date formatting are still maintained by hand, which leaves room for drift if future updates miss one of the public surfaces
+- Because the site does not auto-discover edition metadata, future publication passes should continue verifying chronology, asset filenames, alt text, and links against the markdown source of truth
+
+**Follow-Up Opportunities**  
+- Review the homepage, archive, and Week 18 article route in-browser on mobile and desktop to confirm the new edition image and opening copy sit cleanly within the existing responsive layout
+- If the manual workflow continues, consider turning the repeated weekly publication checks into a concise checklist so future integrations are less likely to miss one of the public surfaces
+
+
 ### 2026-04-30 - Week 17 Published As Latest Edition
 
 **Summary**  
