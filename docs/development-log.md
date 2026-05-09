@@ -28,6 +28,33 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-05-09 - About Page Revised From New Copy Source
+
+**Summary**  
+Revised the live About page using `docs/about-page-copy-revised.md` as the source of truth for page text.
+
+**Reason for Change**  
+The About page needed to reflect the updated publication framing while preserving the existing restrained layout, visual style, header, footer, navigation, and responsive behavior.
+
+**What Changed**  
+- Replaced the prior About page copy with the revised markdown copy
+- Added an unlabeled introductory overview directly below the page title
+- Clarified the page structure around `Why it exists`, `Methodology`, `Sources regularly reviewed`, and `Author bio`
+- Kept `Sources regularly reviewed` in the same section format as the rest of the page while preserving the readable source list
+- Updated the origin-story reference so `Why Finding Critical Path Exists` intentionally links to `/archive/2026/week-04/index.html`
+- Gave the origin-story link a clearer inline treatment so it reads unmistakably as a link
+- Preserved the author LinkedIn, newsletter, and email references in the bio section
+
+**Files or Areas Affected**  
+- `about/index.html`
+- `assets/css/site.css`
+- `docs/about-page-copy-revised.md`
+- `docs/development-log.md`
+
+**Design or Structural Decisions**  
+This was kept as a focused content revision within the existing static About page shell. Small About-scoped CSS refinements keep the unlabeled introduction aligned with the page's reading rhythm and preserve consistent section formatting. No navigation, archive ordering, homepage content, article content, site architecture, dependencies, or shared layout conventions were changed.
+
+
 ### 2026-05-04 - Mobile Horizontal Overflow Fixed After Week 18 Deployment
 
 **Summary**

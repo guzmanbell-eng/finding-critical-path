@@ -623,21 +623,30 @@ a:focus {
 }
 
 .about-page-intro {
-  max-width: 41rem;
+  max-width: min(48rem, calc(100vw - 2rem));
   margin: 0 0 2.85rem;
   padding-top: 0.45rem;
 }
 
 .about-page-intro .page-title {
   max-width: 14ch;
+  margin-bottom: 1.45rem;
+}
+
+.about-page-intro p {
+  margin: 0 0 1.2rem;
+  overflow-wrap: break-word;
+}
+
+.about-page-intro p:last-child {
   margin-bottom: 0;
 }
 
 .about-stack {
   display: grid;
   gap: 2.35rem;
-  max-width: 48rem;
-  margin: 0 auto;
+  max-width: min(48rem, calc(100vw - 2rem));
+  margin: 0;
 }
 
 .about-section {
@@ -648,6 +657,12 @@ a:focus {
 .about-section:last-child {
   padding-bottom: 0;
   border-bottom: 0;
+}
+
+.about-origin-link {
+  color: var(--accent);
+  font-weight: 700;
+  text-underline-offset: 0.18rem;
 }
 
 .about-subsection {
@@ -1313,6 +1328,10 @@ a:focus {
     padding: 2.25rem 0 4rem;
   }
 
+  .about-page-section {
+    width: min(calc(100% - 3.5rem), var(--max-width));
+  }
+
   .hero-aside,
   .card,
   .issue-card,
@@ -1507,13 +1526,13 @@ a:focus {
   }
 
   .about-page-intro {
-    max-width: 100%;
+    max-width: calc(100vw - 3.5rem);
     margin-bottom: 2.2rem;
     padding-top: 0.2rem;
   }
 
   .about-stack {
-    max-width: 100%;
+    max-width: calc(100vw - 3.5rem);
     gap: 1.85rem;
   }
 
