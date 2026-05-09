@@ -102,4 +102,4 @@ The Department of Energy's Defense Production Act Consortium has launched a new 
 
 https://www.energy.gov/ne/articles/department-energys-defense-production-act-consortium-unveils-new-initiative-grow
 
-*Process note: This brief is created using an AI-assisted workflow and reviewed before publication.*
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).*

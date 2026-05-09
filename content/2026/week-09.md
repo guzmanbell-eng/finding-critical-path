@@ -86,4 +86,4 @@ Romania has reached a final investment decision to convert a coal power plant si
 
 https://www.powermag.com/romanias-coal-to-nuscale-smr-conversion-secures-fid-moves-into-implementation-with-caveats
 
-*Process note: This brief is created using an AI-assisted workflow and reviewed before publication.*
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).*

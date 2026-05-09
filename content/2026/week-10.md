@@ -94,4 +94,4 @@ A standard design approval application has been submitted for the i-SMR, a small
 
 https://www.world-nuclear-news.org/articles/standard-design-approval-sought-for-i-smr
 
-*Process note: This brief is created using an AI-assisted workflow and reviewed before publication.*
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).*

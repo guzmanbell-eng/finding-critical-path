@@ -96,4 +96,4 @@ Penn State University has been awarded $6 million by the U.S. Department of Ener
 
 https://www.energy.gov/ne/articles/penn-state-awarded-6-million-help-grow-nuclear-workforce
 
-*Process note: This brief is created using an AI-assisted workflow and reviewed before publication.*
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).*

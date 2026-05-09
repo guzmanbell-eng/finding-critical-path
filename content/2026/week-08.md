@@ -90,4 +90,4 @@ Hybrid concepts challenge the timeline and expectations for fusion’s commercia
 
 https://www.world-nuclear-news.org/articles/openstar-demonstrates-dipole-fusion-reactor-concept
 
-*Process note: This brief is created using an AI-assisted workflow and reviewed before publication.*
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).*

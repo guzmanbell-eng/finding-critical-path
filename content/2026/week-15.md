@@ -96,4 +96,4 @@ The NRC has received Westinghouse’s application to renew and update the AP1000
 
 https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-041.pdf
 
-*Process note: This brief is created using an AI-assisted workflow and reviewed before publication.*
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).*

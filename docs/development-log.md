@@ -28,6 +28,30 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-05-09 - Article Process Note Updated
+
+**Summary**  
+Updated the recurring article process note to point readers toward the About page for more context on Finding Critical Path and how each edition is built.
+
+**Reason for Change**  
+The process note already disclosed the AI-assisted workflow, but it did not give readers a direct path to the fuller publication context now available on the revised About page.
+
+**What Changed**  
+- Added the live process note to Week 5 through Week 16 article pages where it was not yet present
+- Moved the Week 17 and Week 18 process notes so they appear after the `Dive deeper` section
+- Added the `About — FindingCriticalPath.com` link to `/about/index.html`
+- Updated matching process-note wording and coverage in the markdown content source files from Week 5 onward
+- Preserved the note's end-of-article location and existing emphasized visual treatment
+
+**Files or Areas Affected**  
+- `archive/2026/week-05/index.html` through `archive/2026/week-18/index.html`
+- `content/2026/week-05.md` through `content/2026/week-18.md`
+- `docs/development-log.md`
+
+**Design or Structural Decisions**  
+This was kept as a focused copy/link update. No article metadata, article navigation, archive ordering, homepage content, header, footer, About page copy, shared CSS, dependencies, or site architecture were changed.
+
+
 ### 2026-05-09 - About Page Revised From New Copy Source
 
 **Summary**  

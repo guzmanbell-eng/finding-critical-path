@@ -91,3 +91,5 @@ https://www.world-nuclear-news.org/articles/pilot-operation-accident-tolerant-fu
 Framatome has been selected to supply low-enriched uranium (LEU) fuel for Belgium's BR2 research reactor. This marks a significant step in the reactor's fuel supply chain, supporting its continued operation with LEU fuel.
 
 https://www.world-nuclear-news.org/articles/framatome-to-supply-low-enriched-fuel-for-belgiums-br2-research-reactor
+
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).*

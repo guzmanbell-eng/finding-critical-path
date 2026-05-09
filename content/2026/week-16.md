@@ -96,4 +96,4 @@ Rolls-Royce SMR and Great British Energy - Nuclear signed a landmark agreement c
 
 https://www.nucnet.org/news/rolls-royce-smr-signs-landmark-agreement-for-three-reactors-at-wylfa-4-1-2026
 
-*Process note: This brief is created using an AI-assisted workflow and reviewed before publication.*
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).*

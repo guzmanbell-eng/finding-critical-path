@@ -61,3 +61,5 @@ https://www.nucnet.org/news/uk-awards-usd406-million-contract-for-flagship-react
 [5] Reactor vessel installed at Lianjiang unit 2
 China’s Lianjiang project installed the reactor pressure vessel at unit 2, beginning equipment installation for both first-phase units. Unit 1 is expected to begin operation in 2028.
 https://www.world-nuclear-news.org/articles/reactor-vessel-installed-at-lianjiang-unit-2
+
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).*

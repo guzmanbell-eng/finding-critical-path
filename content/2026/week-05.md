@@ -76,4 +76,4 @@ Regulatory steps signal fusion’s transition from concept to commercialization.
 
 https://www.world-nuclear-news.org/articles/type-one-energy-initiates-licensing-of-fusion-power-plant
 
-*Process note: This brief is created using an AI-assisted workflow and reviewed before publication.*
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).*

@@ -84,4 +84,4 @@ Fuel cycle innovations are starting to attract real scale funding.
 
 https://www.energy.gov/ne/articles/does-office-nuclear-energy-awards-19-million-advance-recycling-used-nuclear-fuel
 
-Process note: This brief is created using an AI-assisted workflow and reviewed before publication.
+Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](/about/index.html).
