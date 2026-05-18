@@ -28,6 +28,38 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-05-18 - Week 20 Published
+
+**Summary**  
+Published Week 20, "We the People, Choose Nuclear," as the latest Finding Critical Path edition.
+
+**Reason for Change**  
+The Week 20 markdown source and cover graphic had been added to the repository and needed to be integrated into the static publication flow while preserving chronological ordering and current edition-page conventions.
+
+**What Changed**  
+- Added the Week 20 article page at `archive/2026/week-20/index.html`
+- Featured Week 20 as the homepage latest edition using the structured opening copy from `content/2026/week-20.md`
+- Moved Week 19 into the homepage `Past Editions` strip and kept prior editions in reverse chronological order
+- Added Week 20 as the first entry in the main archive
+- Updated Week 19 previous/next navigation so it now links forward to Week 20
+- Kept the Week 20 article body, references, process note treatment, share utilities, analytics snippet, and image path pattern consistent with Week 19
+- Tightened small-screen title wrapping for edition, homepage-feature, and archive titles after Week 20 revealed narrow-mobile clipping pressure
+
+**Files or Areas Affected**  
+- `assets/css/site.css`
+- `archive/2026/week-20/index.html`
+- `archive/2026/week-19/index.html`
+- `archive/index.html`
+- `index.html`
+- `docs/development-log.md`
+
+**Validation Performed or Recommended**  
+- Confirmed Week 20 markdown source and `w20cover.png` asset locations before publishing
+- Confirmed the Week 20 page references `../../../assets/2026/week-20/w20cover.png` with the supplied alt text
+- Confirmed homepage and archive ordering were updated by publication chronology
+- Confirmed Week 19 now includes Week 20 as the next edition
+- Rendered local headless Chrome screenshots at 360px, 390px, 430px, and 1280px for Week 20, plus 390px homepage and archive checks, then corrected the observed title clipping
+
 ### 2026-05-11 - Week 19 Published
 
 **Summary**  
