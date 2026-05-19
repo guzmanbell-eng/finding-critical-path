@@ -278,6 +278,8 @@ The About page should include three sections in this order:
 
 The page should be thoughtful, restrained, and warm.
 
+Because process-note links from editions make About a frequent trust-check entry point, the page includes a restrained recent-editions sidebar. On desktop it sits to the right of the About copy under the heading `Latest from Finding Critical Path`; on mobile it stacks below the main About content before the footer. The sidebar should mirror the latest three published editions from the same reverse-chronological archive/homepage source pattern, using existing graphic, title, date range, excerpt, and edition link data rather than introducing separately written promotional copy. Sidebar graphics should be derived from the primary edition image and resized to the available sidebar width.
+
 ### Why It Exists
 
 This section should explain the purpose of Finding Critical Path as a publication and why the work matters.

@@ -28,6 +28,42 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-05-19 - About Recent Editions Sidebar Added
+
+**Summary**
+Added a restrained recent-editions sidebar to the About page so readers arriving from article process-note links can quickly move from publication context into recent work. The sidebar now includes resized edition graphics above each recent edition.
+
+**Reason for Change**
+Analytics suggested the About page is acting as a frequent trust-check entry point. The page needed a quiet path back into current Finding Critical Path editions without changing its core explanatory content or making the layout feel promotional.
+
+**What Changed**
+- Wrapped the existing About copy in a main-content column while preserving all current About page text
+- Added a right-side desktop sidebar titled `Latest from Finding Critical Path`
+- Listed the latest three published editions using the same reverse-chronological order, dates, excerpts, and links already represented at the top of the archive
+- Added each edition's existing primary graphic above its sidebar entry, constrained to the sidebar width with consistent 16:9 cropping
+- Added a final `View the full archive ->` link
+- Added About-scoped CSS so the sidebar uses subtle dividers and small metadata on desktop, then stacks below the About content on mobile
+- Updated the site overview to document the About page's trust-check role and recent-editions sidebar behavior
+
+**Files or Areas Affected**
+- `about/index.html`
+- `assets/css/site.css`
+- `docs/site-overview.md`
+- `docs/development-log.md`
+
+**Design or Structural Decisions**
+This remains a static-page enhancement within the existing publication workflow. No article content, archive ordering, homepage layout, publishing flow, dependencies, navigation, or generated content model was changed. Because there is no automated latest-edition feed in the current site, the sidebar mirrors the top three archive entries manually and should be updated during the same publication pass that updates the homepage and archive.
+
+**Validation Performed or Recommended**
+- Served the site locally and confirmed `/about/` returned HTTP 200
+- Used Chrome DevTools mobile emulation to validate the About page at 360px, 390px, 430px, and 1280px widths
+- Confirmed no horizontal overflow at all four widths
+- Confirmed the sidebar stacks below the main About copy and above the footer at 360px, 390px, and 430px
+- Confirmed the sidebar sits as a restrained right-side column at 1280px
+- Continue checking the sidebar during weekly publishing so it stays aligned with archive chronology
+
+---
+
 ### 2026-05-18 - Week 20 Published
 
 **Summary**  
