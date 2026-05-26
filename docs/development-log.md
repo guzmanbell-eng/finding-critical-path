@@ -28,6 +28,42 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-05-25 - Week 21 Published
+
+**Summary**
+Published Week 21, "Nuclear Is Power-Leveling," as the latest Finding Critical Path edition.
+
+**Reason for Change**
+The Week 21 markdown source and cover graphic had been added to the repository and needed to be integrated into the static publication flow while preserving chronological ordering, edition-page conventions, process-note language, and responsive behavior.
+
+**What Changed**
+- Added the Week 21 article page at `archive/2026/week-21/index.html`
+- Featured Week 21 as the homepage latest edition using the structured opening copy from `content/2026/week-21.md`
+- Moved Week 20 into the homepage `Past Editions` strip and kept prior editions in reverse chronological order
+- Added Week 21 as the first entry in the main archive
+- Updated the About page recent-editions sidebar so it mirrors the latest three published editions
+- Updated Week 20 previous/next navigation so it now links forward to Week 21
+- Kept the Week 21 article body, references, process note treatment, share utilities, analytics snippet, and image path pattern consistent with recent edition pages
+
+**Files or Areas Affected**
+- `about/index.html`
+- `archive/2026/week-20/index.html`
+- `archive/2026/week-21/index.html`
+- `archive/index.html`
+- `index.html`
+- `docs/development-log.md`
+
+**Validation Performed or Recommended**
+- Confirmed Week 21 markdown source and `w21cover.png` asset locations before publishing
+- Confirmed the Week 21 page references `../../../assets/2026/week-21/w21cover.png` with the supplied alt text
+- Confirmed homepage, archive, About sidebar, and adjacent edition navigation were updated by publication chronology
+- Confirmed the Week 21 process note links to `/about/index.html` and uses the established article-end language
+- Ran local static path validation across the touched pages
+- Verified the Week 21 Dive deeper source links; four returned HTTP 200 through PowerShell, and the NRC PDF opened through browser-backed validation after PowerShell timed out
+- Ran local headless Chrome checks at 360px, 390px, 430px, and 1280px for the homepage, archive, Week 21, and Week 20, confirming no horizontal overflow and successful image rendering
+
+---
+
 ### 2026-05-19 - About Recent Editions Sidebar Added
 
 **Summary**
