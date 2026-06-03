@@ -28,6 +28,43 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-06-02 - Week 22 Published
+
+**Summary**
+Published Week 22, "Confidence Measured in Generations," as the latest Finding Critical Path edition.
+
+**Reason for Change**
+The Week 22 markdown source and cover graphic had been added to the repository and needed to be integrated into the static publication flow while preserving chronology, homepage/latest-edition conventions, article utilities, process-note wording, and responsive behavior.
+
+**What Changed**
+- Added the Week 22 article page at `archive/2026/week-22/index.html`
+- Featured Week 22 as the homepage latest edition using the structured opening copy from `content/2026/week-22.md`
+- Moved Week 21 into the homepage `Past Editions` strip and kept prior editions in reverse chronological order
+- Added Week 22 as the first entry in the main archive
+- Updated the About page recent-editions sidebar so it mirrors the latest three published editions
+- Updated Week 21 previous/next navigation so it now links forward to Week 22
+- Kept the Week 22 article body, references, process note treatment, share utilities, analytics snippet, and image path pattern consistent with recent edition pages
+
+**Files or Areas Affected**
+- `about/index.html`
+- `archive/2026/week-21/index.html`
+- `archive/2026/week-22/index.html`
+- `archive/index.html`
+- `index.html`
+- `docs/development-log.md`
+
+**Validation Performed or Recommended**
+- Confirmed Week 22 markdown source and `w22cover.png` asset locations before publishing
+- Confirmed the Week 22 page references `../../../assets/2026/week-22/w22cover.png` with the supplied alt text
+- Confirmed homepage, archive, About sidebar, and adjacent edition navigation were updated by publication chronology
+- Confirmed the Week 22 process note links to `/about/index.html` and uses the established article-end language
+- Ran local static path validation across the touched pages
+- Served the site locally and confirmed HTTP 200 responses for `/`, `/archive/`, `/archive/2026/week-22/`, `/archive/2026/week-21/`, and `/assets/2026/week-22/w22cover.png`
+- Confirmed the Week 22 cover image opens as a 1280x720 PNG
+- Browser-based responsive overflow checks at 360px, 390px, 430px, and 1280px were attempted but blocked by the local Chromium/Edge runtime failing before rendering, including on a simple data URL; rerun those browser checks before deployment if another local browser environment is available
+
+---
+
 ### 2026-05-25 - Week 21 Published
 
 **Summary**
