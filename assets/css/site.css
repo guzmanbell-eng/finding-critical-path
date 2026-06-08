@@ -587,7 +587,8 @@ a:focus {
 .past-edition-media img {
   width: 100%;
   aspect-ratio: 5 / 4;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   border: 1px solid var(--rule);
   background: var(--surface-muted);
 }
@@ -735,13 +736,8 @@ a:focus {
   aspect-ratio: 16 / 9;
   height: auto;
   max-height: 11.25rem;
-  object-fit: cover;
-  transition: transform 180ms ease;
-}
-
-.about-latest-item:hover .about-latest-media img,
-.about-latest-item:focus-within .about-latest-media img {
-  transform: scale(1.015);
+  object-fit: contain;
+  object-position: center;
 }
 
 .about-latest-edition-title {
@@ -1197,6 +1193,7 @@ a:focus {
 .archive-edition-media {
   display: block;
   min-width: 0;
+  align-self: center;
 }
 
 .archive-edition-media--compact-square {
@@ -1207,8 +1204,10 @@ a:focus {
 
 .archive-edition-media img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
   border: 1px solid var(--rule);
   background: var(--surface-muted);
   transition:

@@ -28,6 +28,34 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-06-08 - Archive Thumbnail Aspect-Ratio Fix
+
+**Summary**
+Updated archive-related thumbnail treatments so full edition graphics remain visible instead of being center-cropped within fixed thumbnail areas.
+
+**Reason for Change**
+Archive rows, homepage Past Editions, and About recent-edition thumbnails used `object-fit: cover`, which enlarged graphics to fill their containers and cropped the sides when the image and thumbnail aspect ratios differed. The About sidebar also applied a small hover zoom that could clip image edges.
+
+**What Changed**
+- Changed archive row thumbnails from stretched `cover` rendering to centered `contain` rendering in a consistent 16:9 image box
+- Changed homepage Past Editions thumbnails to centered `contain` rendering while preserving their existing desktop and mobile dimensions
+- Changed About recent-edition thumbnails to centered `contain` rendering and removed the image zoom hover that could reintroduce clipping
+- Kept the existing cool neutral `var(--surface-muted)` background visible behind any letterboxing or pillarboxing
+- Left homepage featured-edition images and individual article hero images unchanged
+
+**Files or Areas Affected**
+- `assets/css/site.css`
+- `docs/development-log.md`
+
+**Validation Performed or Recommended**
+- Verified archive, homepage, About, and the Week 23 article page with local headless Chrome checks at 360px, 390px, 430px, and 1280px
+- Confirmed archive, homepage Past Editions, and About recent-edition thumbnails compute to `object-fit: contain` and remain centered
+- Confirmed the Week 23 article hero image remains on its existing `object-fit: cover` treatment
+- Confirmed all checked pages had no horizontal overflow and no broken images
+- Visually reviewed local screenshots of the archive at 390px and 1280px, the homepage at 390px, the About page at 390px, and Week 23 at 1280px
+
+---
+
 ### 2026-06-08 - Week 23 Published
 
 **Summary**
