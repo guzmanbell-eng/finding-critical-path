@@ -28,6 +28,43 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-06-08 - Week 23 Published
+
+**Summary**
+Published Week 23, "Nuclear's Succession Plan Finds Its Footing," as the latest Finding Critical Path edition.
+
+**Reason for Change**
+The Week 23 markdown source and cover graphic had been added to the repository and needed to be integrated into the static publication flow while preserving chronology, current article conventions, exact structured opening and closing copy, and responsive behavior.
+
+**What Changed**
+- Added the Week 23 article page at `archive/2026/week-23/index.html`
+- Featured Week 23 as the homepage latest edition using the structured opening copy from `content/2026/week-23.md`
+- Moved Week 22 into the homepage `Past Editions` strip and kept prior editions in reverse chronological order
+- Added Week 23 as the first entry in the main archive
+- Updated the About page recent-editions sidebar so it mirrors the latest three published editions
+- Updated Week 22 previous/next navigation so it now links forward to Week 23
+- Kept the Week 23 article body, references, process note treatment, share utilities, analytics snippet, and image path pattern consistent with recent edition pages
+
+**Files or Areas Affected**
+- `about/index.html`
+- `archive/2026/week-22/index.html`
+- `archive/2026/week-23/index.html`
+- `archive/index.html`
+- `index.html`
+- `docs/development-log.md`
+
+**Validation Performed or Recommended**
+- Confirmed Week 23 markdown source and `w23cover.png` asset locations before publishing
+- Confirmed the Week 23 page references `../../../assets/2026/week-23/w23cover.png` with specific alt text based on the actual cover graphic
+- Confirmed homepage, archive, About sidebar, and adjacent edition navigation were updated by publication chronology
+- Confirmed the Week 23 process note, Archive link, Previous edition link, Copy link, LinkedIn, and Email utilities match the established recent-edition pattern
+- Ran local static href/src validation across the touched pages
+- Verified homepage, archive, About, Week 22, and Week 23 with local headless Chrome checks at 360px, 390px, 430px, and 1280px, confirming no horizontal overflow and successful image rendering
+- Verified Week 23 key article elements stay within the viewport at 360px, 390px, 430px, and 1280px
+- Verified four of the five Week 23 Dive deeper source URLs returned HTTP 200 through PowerShell; the NRC PDF URL timed out in PowerShell, consistent with prior NRC PDF validation behavior, while the published path matches the markdown source
+
+---
+
 ### 2026-06-02 - Week 22 Published
 
 **Summary**
