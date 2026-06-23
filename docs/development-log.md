@@ -28,6 +28,42 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-06-23 - Week 25 Published
+
+**Summary**
+Published Week 25, "How Nuclear Is Making Winning a Habit," as the latest Finding Critical Path edition.
+
+**Reason for Change**
+The Week 25 markdown source and cover graphic had been added to the repository and needed to be integrated into the static publication flow while preserving chronology, current article conventions, exact structured opening and closing copy, and responsive behavior. Week 24 was skipped because no Week 24 article was published.
+
+**What Changed**
+- Added the Week 25 article page at `archive/2026/week-25/index.html`
+- Featured Week 25 as the homepage latest edition using the structured opening copy from `content/2026/week-25.md`
+- Moved Week 23 into the homepage `Past Editions` strip and kept prior editions in reverse chronological order
+- Added Week 25 as the first entry in the main archive, directly above Week 23
+- Updated the About page recent-editions sidebar so it mirrors the latest three published editions
+- Updated Week 23 previous/next navigation so it now links forward to Week 25, skipping Week 24 cleanly
+- Kept the Week 25 article body, references, process note treatment, share utilities, analytics snippet, and image path pattern consistent with recent edition pages
+
+**Files or Areas Affected**
+- `about/index.html`
+- `archive/2026/week-23/index.html`
+- `archive/2026/week-25/index.html`
+- `archive/index.html`
+- `index.html`
+- `docs/development-log.md`
+
+**Validation Performed or Recommended**
+- Confirmed Week 25 markdown source and `w25cover.png` asset locations before publishing
+- Confirmed no Week 24 markdown, page, asset, or navigation links were introduced
+- Confirmed homepage, archive, About sidebar, and adjacent edition navigation were updated by publication chronology
+- Confirmed the Week 25 process note, Archive link, Previous edition link, Copy link, LinkedIn, and Email utilities match the established recent-edition pattern
+- Ran local static href/src validation across the touched pages
+- Verified homepage, archive, About, Week 23, and Week 25 with local headless Chrome checks at 360px, 390px, 430px, and 1280px, confirming no horizontal overflow and successful image rendering
+- Verified the Week 25 Copy link button updates to `Copied` in a local browser check
+
+---
+
 ### 2026-06-08 - Archive Thumbnail Aspect-Ratio Fix
 
 **Summary**

@@ -1,0 +1,105 @@
+---
+title: "How Nuclear Is Making Winning a Habit"
+series: "Finding Critical Path"
+week: 25
+week_id: "2026-W25"
+year: 2026
+date: "June 14-20, 2026"
+slug: "2026-week-25"
+graphic: "w25cover.png"
+graphic_alt_text: "Editorial-style cinematic illustration of a football team running training drills with cones and balls on a stadium pitch at dusk, the stands largely empty, with a sleek matte-black advanced nuclear reactor unit accented in amber light standing at realistic scale at the far end of the field where the goal would be, conveying the unseen groundwork that makes a visible win possible."
+---
+
+# How Nuclear Is Making Winning a Habit
+
+*June 14–20, 2026*
+
+## Hook
+
+Excellence is the discipline of doing the ordinary things right so often that success becomes inevitable. Nuclear has always had that commitment, and the wins are stacking up.
+
+## Hook Text
+
+A reactor reaching criticality is the moment that earns the headline. It is also the last step in a long chain of work that never does. Before a new reactor can go critical, a country has to decide it wants nuclear and write that decision into law. A regulator has to make the path predictable enough to walk. A supply chain has to put real hardware on the floor. A goal on the world stage is the part the crowd remembers, built on years of training and organization no one in the stands ever sees. This week the whole chain advanced, link by link, which is how an industry turns a single milestone into a habit of them.
+
+## Tech Framing
+
+These five signals come from four countries and span fission and fusion, hardware and statute, a reactor running today and a plant that breaks ground in 2028. No single layer of the industry owns this week. The range is the point, and it starts with the loudest signal of the five.
+
+## Evidence 1
+
+On June 18, Valar Atomics' Ward 250 reached self-sustaining criticality at the San Rafael Energy Lab in Emery County, Utah. It is the second reactor to go critical under the DOE Reactor Pilot Program, less than two weeks after Antares Nuclear's Mark-0 reached the same milestone in Idaho. Ward 250 is a TRISO-fueled high-temperature gas reactor, and it is the first reactor the DOE has authorized that was built and operated entirely outside the national laboratory system, on a privately developed site.
+
+The detail that should stop a reader is the timeline. Founder Isaiah Taylor noted that nine months ago the site was empty ground. Getting from there to a critical reactor ran through a non-nuclear prototype, a cold criticality campaign at Los Alamos, two rounds of safety analysis approval, and a military airlift to Utah aboard three C-17s. Valar drew the line this week turns on: "Criticality proves the physics; power operations prove the engineering."
+
+## Evidence 2
+
+The chain starts long before a reactor, and this week one country laid its first link. On June 18, Estonia's parliament passed the Nuclear Energy and Safety Act by 63 votes to 10, giving the country its first legal framework for nuclear power. The act builds the entire apparatus in advance: a phased licensing system running from preliminary assessment through construction, testing, operation, and decommissioning, a national regulator that begins work on January 1, 2027, and a decommissioning fund the operator pays into across the plant's life. Two details stand out. Parliament wrote in a requirement to approve the construction decision itself, and the law limits technology to solutions already proven in practice. Estonia's first reactor application is not expected until 2029. A regulator standing ready before anyone files an application is what the unglamorous half of this looks like when a country does it deliberately.
+
+## Evidence 3
+
+While Estonia is standing a regulator up, the United States is making the regulator it already has more cost effective for the industry. The NRC finalized a fee rule on June 16 that puts fixed caps on licensing and service fees, lowers costs for prospective applicants, and lets a company know the maximum it will owe before it begins. Two days later the agency proposed a second rule to streamline licensing for fuel-cycle facilities, including a dedicated pathway for reprocessing and updated requirements for advanced reactor fuels. Both move under Executive Order 14300 and the ADVANCE Act. The reactor designs stay exactly as they were. What shifts is the cost and predictability of asking permission, the part of the process that decides whether a developer can hold a budget and a timeline.
+
+## Evidence 4
+
+A law and a fee schedule are the apparatus on paper. The turbine is where we turn physics into a product. The steam turbine and generator package for Oklo's first Aurora powerhouse at Idaho National Laboratory went into active production this week at Siemens Energy plants in Germany, closing out the last of the major long-lead contracts for the reactor's 2028 startup. The choice that matters is the equipment itself. Oklo selected the SST-600, one of Siemens Energy's most widely deployed industrial turbines, for the conventional side of the plant, drawing on proven commercial hardware where the design allows it. Both companies built the configuration to be repeated across future Aurora units with limited site-specific changes. Oklo put the logic plainly: the company sells power, not reactor designs.
+
+## Evidence 5
+
+Everything so far serves reactors the industry already knows how to build. The last signal writes the rules for one no one has built at all. Tennessee became the first US state to put a regulatory framework in place for fusion machines, with the new rules taking effect June 9. As an Agreement State, Tennessee licenses certain nuclear materials under authority delegated from the NRC, and it used that standing to register and license fusion devices, which fall outside the federal framework for reactors. The order of events is the point. Type One Energy is targeting 2028 to begin construction of a 400 megawatt stellarator plant at a former coal site near Oak Ridge, and it expects to be among the first licensees under rules that now exist before its machine does.
+
+## Tracking the Signals
+
+The DOE Reactor Pilot Program is the thread to watch, and it is moving on a schedule measured in days. Antares Nuclear's Mark-0 reached criticality on June 4. Valar's Ward 250 followed on June 18, fourteen days later. The program was directed to bring at least three advanced reactors critical before July 4, which puts the third inside the next two weeks. Two companies are positioned for it. Aalo Atomics has its Critical Test Reactor through DOE safety review and into operational readiness at Idaho. Oklo's Atomic Alchemy is targeting the same deadline in Texas. A program that asked for three criticalities in roughly a year now has two of them banked and a fortnight to land the third. The gate-to-gate pace is the story the deadline was designed to force.
+
+## Synthesis
+
+Valar's nine months look like raw speed. That speed was earned long before Valar existed. The TRISO fuel form Ward 250 runs on was proved out over years of national laboratory work. The DOE authorization pathway it used was built for exactly this kind of reactor. The safety frameworks, the fuel supply, the construction expertise all existed because the industry spent decades getting them right. Valar moved fast because it was standing on a foundation it did not have to build.
+
+That is what gives this week its shape. Estonia writing its first nuclear law, the NRC making its costs predictable, Siemens Energy putting a proven turbine into production, Tennessee setting rules for a machine still on the drawing board, all of it is the same foundational work, laid for reactors that have not gone critical yet. The industry is doing for the next milestone exactly what it already did for this one.
+
+More moments like Valar's are coming because the law, the hardware, the costs, and the rules keep being put in place ahead of them. Get the ordinary things right for long enough, and the extraordinary ones start to feel inevitable.
+
+## Structural Close
+
+A reactor going critical is the goal that makes the highlight reel. The training that produced it happened years earlier, on fields no camera was pointed at. This week the industry was back out on those fields, getting ready for the next one.
+
+## Forward Looking Question
+
+Every win this week stood on groundwork someone laid long before the headline. So here is my question for you: what are you building right now, in the part of the work that never makes the news, that the next big moment will depend on?
+
+More next week.
+
+## Dive deeper into this week's signals
+
+### [1] Valar Atomics' Ward 250 Becomes Second Reactor to Go Critical Under DOE Pilot Program
+
+Valar Atomics achieved self-sustaining criticality at Ward 250, a TRISO-fueled high-temperature gas reactor at the San Rafael Energy Lab in Utah, on June 18. It is the second advanced reactor to go critical under the DOE Reactor Pilot Program and the first DOE-authorized reactor built and operated entirely outside the national laboratory system. The site was empty ground nine months earlier, and the reactor was transported to Utah by military airlift in February.
+
+https://www.powermag.com/valar-atomics-ward-250-becomes-second-reactor-to-go-critical-under-doe-pilot-program
+
+### [2] Estonia's Parliament passes new nuclear energy law
+
+Estonia's parliament passed the Nuclear Energy and Safety Act by 63 votes to 10, giving the country its first legal framework for nuclear power. The act establishes a phased licensing system, a national regulator that begins operating on January 1, 2027, and a decommissioning fund, while limiting technology choice to solutions already proven in practice. Estonia's first reactor application is not expected until 2029.
+
+https://www.world-nuclear-news.org/articles/estonias-parliament-passes-new-nuclear-energy-law
+
+### [3] NRC Finalizes Fee Rule and Proposes Advanced Fuel Infrastructure Rule
+
+The NRC finalized a fee rule on June 16 that puts fixed caps on many licensing and service fees, lowers costs for prospective applicants, and gives companies advance certainty on the maximum they will owe. Two days later, the agency proposed a second rule to streamline licensing for fuel-cycle facilities, including a dedicated pathway for reprocessing and updated requirements for advanced reactor fuels. Both actions advance under Executive Order 14300 and the ADVANCE Act.
+
+https://www.nrc.gov/sites/default/files/cdn/doc-collection-news/2026/26-066.pdf
+
+### [4] Siemens Energy Turbine Package Advances for Oklo's Aurora-INL
+
+The steam turbine and generator package for Oklo's first Aurora powerhouse at Idaho National Laboratory entered active production at Siemens Energy facilities in Germany, closing out the last major long-lead equipment contract ahead of the reactor's targeted 2028 startup. Oklo selected the commercially established SST-600 turbine for the plant's conventional island, drawing on proven industrial hardware. Both companies designed the configuration to be repeated across future Aurora deployments with limited site-specific changes.
+
+https://www.powermag.com/in-a-first-for-advanced-nuclear-siemens-energy-turbine-package-advances-for-oklos-aurora-inl
+
+### [5] Tennessee becomes first US state to set up fusion regulations
+
+Tennessee became the first US state to establish its own regulatory framework for nuclear fusion machines, with the new rules taking effect June 9. As an NRC Agreement State, Tennessee used its delegated authority over nuclear materials to register and license fusion devices, which fall outside the federal framework for reactors. Type One Energy expects to be among the first licensees, with construction of a 400 MWe stellarator plant at a former coal site near Oak Ridge potentially beginning in 2028.
+
+https://www.world-nuclear-news.org/articles/tennessee-becomes-first-us-state-to-set-up-fusion-regulations
+
+*Process note: This brief is created using an AI-assisted workflow and reviewed before publication. Learn more about Finding Critical Path and how each edition is built at [About — FindingCriticalPath.com](https://findingcriticalpath.com/about/index.html).*
