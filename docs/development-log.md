@@ -28,6 +28,43 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-06-30 - Week 26 Published
+
+**Summary**
+Published Week 26, "Nuclear Starts Speaking in Fleets," as the latest Finding Critical Path edition.
+
+**Reason for Change**
+The Week 26 markdown source and cover graphic had been added to the repository and needed to be integrated into the static publication flow while preserving chronology, current article conventions, exact structured opening and closing copy, and responsive behavior.
+
+**What Changed**
+- Added the Week 26 article page at `archive/2026/week-26/index.html`
+- Featured Week 26 as the homepage latest edition using the structured opening copy from `content/2026/week-26.md`
+- Moved Week 25 into the homepage `Past Editions` strip and kept prior editions in reverse chronological order
+- Added Week 26 as the first entry in the main archive, directly above Week 25
+- Updated the About page recent-editions sidebar so it mirrors the latest three published editions
+- Updated Week 25 previous/next navigation so it now links forward to Week 26
+- Kept the Week 26 article body, references, process note treatment, share utilities, analytics snippet, and image path pattern consistent with recent edition pages
+
+**Files or Areas Affected**
+- `about/index.html`
+- `archive/2026/week-25/index.html`
+- `archive/2026/week-26/index.html`
+- `archive/index.html`
+- `index.html`
+- `docs/development-log.md`
+
+**Validation Performed or Recommended**
+- Confirmed Week 26 markdown source and `w26cover.png` asset locations before publishing
+- Confirmed homepage, archive, About sidebar, and adjacent edition navigation were updated by publication chronology
+- Confirmed the Week 26 process note, Archive link, Previous edition link, Copy link, LinkedIn, and Email utilities match the established recent-edition pattern
+- Ran local static href/src validation across the touched pages
+- Served the site locally and confirmed HTTP 200 responses for `/`, `/archive/`, `/about/`, `/archive/2026/week-25/`, `/archive/2026/week-26/`, and `/assets/2026/week-26/w26cover.png`
+- Confirmed the Week 26 cover image opens as a 1280x720 PNG
+- Ran local headless Chrome screenshot checks for the homepage, archive, About, and Week 26 at narrow mobile and desktop widths
+- Ran local headless Chrome DOM checks for homepage, archive, About, Week 25, and Week 26 at a narrow viewport, confirming no horizontal overflow and no broken rendered images
+
+---
+
 ### 2026-06-23 - Week 25 Published
 
 **Summary**
