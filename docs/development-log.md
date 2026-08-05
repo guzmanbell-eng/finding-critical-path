@@ -28,6 +28,43 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-08-04 - Weeks 27, 29, 30, and 31 Published
+
+**Summary**
+Published the completed Week 27, Week 29, Week 30, and Week 31 Finding Critical Path editions and promoted Week 31, "Powering Each Other," as the latest edition.
+
+**Reason for Change**
+The completed markdown sources and cover graphics for Weeks 27, 29, 30, and 31 were already present in the repository and needed to be integrated into the static publication flow. Week 28 was intentionally not published and was skipped in archive and edition navigation.
+
+**What Changed**
+- Added article pages for Weeks 27, 29, 30, and 31 under `archive/2026/`
+- Updated the homepage latest-edition feature to Week 31 using the structured opening copy from `content/2026/week-31.md`
+- Updated the homepage Past Editions strip, main archive, and About recent-editions sidebar in reverse publication chronology
+- Updated adjacent edition navigation so Week 26 leads to Week 27, Week 27 leads directly to Week 29, Week 29 leads to Week 30, and Week 30 leads to Week 31
+- Adjusted homepage featured and article hero image rendering to preserve the full cover graphic without center cropping, matching the established full-image archive behavior
+
+**Files or Areas Affected**
+- `about/index.html`
+- `archive/2026/week-26/index.html`
+- `archive/2026/week-27/index.html`
+- `archive/2026/week-29/index.html`
+- `archive/2026/week-30/index.html`
+- `archive/2026/week-31/index.html`
+- `archive/index.html`
+- `assets/css/site.css`
+- `index.html`
+- `docs/development-log.md`
+
+**Validation Performed or Recommended**
+- Confirm the four new article pages load successfully
+- Confirm homepage, archive, and About recent-editions chronology now reflect Week 31, Week 30, Week 29, Week 27, then Week 26
+- Confirm there are no links to a nonexistent Week 28 page
+- Confirm article, homepage, archive, and About images render as complete graphics without unintended cropping
+- Confirm previous/next navigation skips Week 28 cleanly
+- Confirm copy-link, LinkedIn, email, process note, About link, footer, and analytics conventions remain in place
+
+---
+
 ### 2026-06-30 - Week 26 Published
 
 **Summary**

@@ -431,6 +431,8 @@ The workflow should assume:
 - no separate manually designed thumbnail required
 - thumbnail behavior derived from the main image
 
+Homepage featured images, archive images, About recent-edition images, and article-page hero images should preserve the complete edition graphic within their responsive frames. Use the site's neutral image-box background for any letterboxing or pillarboxing rather than center-cropping the source artwork.
+
 Images should be optimized for speed while still looking polished and professional.
 
 ## 15. Mobile, Performance, and Readability
