@@ -28,6 +28,39 @@ Minor visual tweaks do not need a heavy log entry unless they affect user experi
 
 ---
 
+### 2026-08-11 - Week 32 Published
+
+**Summary**
+Published Week 32, "Paying Its Own Way," as the latest Finding Critical Path edition.
+
+**Reason for Change**
+The Week 32 markdown source and cover graphic were already present in the repository and needed to be integrated into the static publication flow while preserving the current edition layout, image handling, process note, share utilities, and chronology.
+
+**What Changed**
+- Added the Week 32 article page at `archive/2026/week-32/index.html`
+- Featured Week 32 as the homepage latest edition using the structured opening copy from `content/2026/week-32.md`
+- Added Week 32 as the first entry in the main archive
+- Updated the About page recent-editions sidebar so Week 32 appears at the top
+- Updated Week 31 previous/next navigation so it now links forward to Week 32
+- Kept Week 32 without a next-edition link because it is the newest published edition
+
+**Files or Areas Affected**
+- `about/index.html`
+- `archive/2026/week-31/index.html`
+- `archive/2026/week-32/index.html`
+- `archive/index.html`
+- `index.html`
+- `docs/development-log.md`
+
+**Validation Performed or Recommended**
+- Confirmed Week 32 markdown source and `w32cover.png` asset locations before publishing
+- Confirmed homepage, archive, About sidebar, and adjacent edition navigation now reflect Week 32 as the newest published edition
+- Confirmed Week 32 uses the established process note, About link, Archive link, Previous edition link, Copy link, LinkedIn, Email, footer, and analytics conventions
+- Ran local static href/src validation across the touched pages
+- Confirmed local HTTP 200 response for the homepage during the localhost validation pass
+- Generated headless Chrome screenshots for the homepage, archive, About page, and Week 32 page at 390px mobile and 1280px desktop widths
+- Ran a same-origin headless Chrome overflow check for the homepage, archive, About page, and Week 32 page at 390px and 1280px, confirming `scrollWidth` equals `clientWidth` with zero horizontal overflow
+
 ### 2026-08-04 - Weeks 27, 29, 30, and 31 Published
 
 **Summary**
